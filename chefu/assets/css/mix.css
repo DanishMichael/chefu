@@ -1,0 +1,356 @@
+/*
+Custom Styles. Bootstrap Styles are default'
+*/
+*
+/*Typography*/
+a {
+	color: #6ccc42;
+}
+a:hover {
+	color: #6ccc42;
+	text-decoration: underline;
+}
+/* Portfolio */
+#portfolio {
+	padding: 30px 0px 40px 0px;
+	overflow: hidden;
+}
+#portfolio ul.controls {
+	padding: 0px 0 20px 2px;
+	overflow: hidden;
+	margin: 20px 0;
+	border-bottom: #f05f40 solid 2px;
+}
+#portfolio ul.controls li {
+	float: left;
+	color: #000;
+	font-weight: 400;
+	font-size: 15px;
+	padding: 5px 15px;
+	cursor: pointer;
+}
+#portfolio ul.controls li:hover, #portfolio ul.controls li.active {
+	padding: 4px 15px;
+	color: #f05f40;
+	margin: 0 -1px;
+	border: 1px solid #f05f40;
+}
+#portfolio ul#Grid {
+	margin: 0 0 30px 0;
+	padding: 0;
+	position: relative;
+}
+#portfolio ul#Grid li {
+	padding: 0 1px 1px 0 ;
+	margin: 0;
+	display: none;
+	position: relative;
+}
+#portfolio ul#Grid li a {
+	display: block;
+	position: relative;
+	color: #fff;
+}
+#portfolio ul#Grid li span.overlay {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	visibility: hidden;
+	text-indent: -9999px;
+	-webkit-transition: 0.3s ease-in-out;
+	-moz-transition: 0.3s ease-in-out;
+	-o-transition: 0.3s ease-in-out;
+	transition: 0.3s ease-in-out;
+	background: #000;
+}
+#portfolio ul#Grid li:hover span.overlay {
+	visibility: visible;
+	opacity: 0.2;
+	filter: alpha(opacity=20);
+}
+#portfolio ul#Grid a.link {
+	padding: 0px 10px;
+	height: 0;
+	-webkit-transition: 0.3s;
+	-moz-transition: 0.3s;
+	-o-transition: 0.3s;
+	transition: 0.3s;
+	z-index: 10;
+	overflow: hidden;
+	font-size: 22px;
+	font-weight: 400;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	color: #FFF;
+	line-height: 30px;
+	background: #f05f40;
+}
+#portfolio ul#Grid li:hover a.link {
+	background: #f05f40;
+	opacity: 0.9;
+}
+#portfolio ul#Grid a.link span {
+	color: #f9f9f9;
+	font-weight: 400;
+	display: block;
+	font-size: 14px;
+	text-transform: none;
+	line-height: 22px;
+}
+#portfolio ul#Grid a.link:after {
+	border-color: rgba(63, 141, 191, 0);
+	border-bottom-color: #f05f40;
+	border-width: 10px;
+	margin-left: -10px;
+}
+#portfolio ul#Grid a.link:before {
+	border-color: rgba(63, 141, 191, 0);
+	border-bottom-color: #f05f40;
+	border-width: 16px;
+	margin-left: -16px;
+}
+#portfolio ul#Grid li:hover a.link {
+	padding: 10px 10px;
+	height: auto;
+	overflow: visible;
+	text-decoration: none;
+}
+/*
+MENU CSS
+*/
+a.submenu {
+	display: none;
+	position: absolute;
+	right: 5px;
+	top: 23px;
+	width: 44px;
+	height: 34px;
+	text-indent: -9999px;
+	outline: none;
+	-webkit-transition: all ease 0s;
+	-moz-transition: all ease 0s;
+	-o-transition: all ease 0s;
+	transition: all ease 0s;
+	background: url('../images/submenu.png') top left no-repeat;
+}
+a.submenu:hover {
+	background: url('../images/submenu.png') bottom left no-repeat;
+}
+.menuBar {
+	padding-right: 15px;
+	float: right;
+}
+.menuBar ul {
+	list-style: none;
+}
+.menuBar li {
+	padding: 15px 0;
+	margin: 0 0 0 40px;
+	position: relative;
+	float: left;
+}
+.menuBar li a {
+	color: #fff;
+	font-size: 12px;
+	padding: 10px 20px;
+	display: block;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	text-transform: uppercase;
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+	line-height: 20px;
+	outline: none;
+}
+.menuBar li a:hover {
+	color: #fff;
+	text-decoration: none;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #f05f40;
+}
+.menuBar li.active a {
+	color: #fff;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	background: #f05f40;
+}
+.menuBar li ul {
+	position: absolute;
+	left: 0px;
+	border-radius: 0px;
+	padding: 0;
+	-webkit-border-radius: 0px;
+	-moz-border-radius: 0px;
+	-o-border-radius: 0px;
+	-ms-border-radius: 0px;
+	background: #6ccc42;
+	box-shadow: none;
+	-moz-box-shadow: none;
+	-webkit-box-shadow: none;
+	-o-box-shadow: none;
+	-ms-box-shadow: none;
+	-webkit-transition: all 0.25s ease;
+	-moz-transition: all 0.25s ease;
+	-ms-transition: all 0.25s ease;
+	-o-transition: all 0.25s ease;
+	transition: all 0.25s ease;
+	top: 85%;
+	opacity: 0;
+	visibility: hidden;
+	height: 0px;
+}
+.menuBar li:hover ul {
+	top: 100%;
+	opacity: 1;
+	visibility: visible;
+	height: auto !important;
+}
+.menuBar li li {
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	border-top: 1px solid #fff;
+}
+.menuBar li li a {
+	color: #fff;
+	border: 0px;
+	font-size: 11px;
+	line-height: 11px;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	white-space: nowrap;
+}
+.menuBar li li a:hover {
+	color: #fff;
+	background: #f05f40;
+}
+ @media(min-width:768px) {
+.menuBar, .menuBar ul {
+	display: block !important;
+}
+.menuBar li {
+	margin-left: 0px;
+}
+.menuBar li a {
+	font-size: 12px;
+	padding: 10px 15px;
+}
+}
+ @media(min-width:992px) {
+.menuBar li {
+	margin-left: 20px;
+}
+.menuBar li a {
+	font-size: 12px;
+	padding: 10px 15px;
+}
+}
+@media(min-width:1200px) {
+.menuBar li {
+	margin-left: 40px;
+}
+.menuBar li a {
+	font-size: 12px;
+}
+}
+@media only screen and (max-width: 767px) {
+a.submenu {
+	display: block;
+}
+.menuBar {
+	padding: 10px 0px 10px 0px;
+	float: none;
+	max-height: 350px;
+	overflow: auto;
+	width: 100%;
+	display: none;
+}
+.menuBar ul {
+	padding: 0px;
+	margin: 0px;
+}
+.menuBar li {
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	text-align: center;
+}
+.menuBar li a {
+	padding: 7px 0px;
+	outline: 0px;
+}
+.menuBar li ul {
+	position: static;
+	left: 0px;
+	top: 0px;
+	opacity: 1;
+	visibility: visible;
+	display: none;
+	height: auto;
+}
+.menuBar li li {
+	border: 0px;
+}
+.menuBar li.dropdown:hover. .menuBar li.dropdown.active {
+border-bottom: #f05f40 solid 0px;
+}
+.menuBar li.current {
+	border-bottom: #f05f40 solid 2px;
+}
+.slider {
+	overflow: hidden;
+	max-width: 100%;
+}
+.main__middle__container {
+	overflow: hidden;
+	max-width: 100%;
+}
+footer {
+	overflow: hidden;
+	max-width: 100%;
+}
+h2.page__title, .line__bg h2 {
+	font-size: 24px;
+	line-height: normal;
+}
+h3 {
+	font-size: 22px;
+	line-height: normal;
+}
+.homepage {
+	margin-top: 65%;
+}
+.carousel-caption {
+	display: none;
+}
+.carousel-control span {
+	margin-top: -175px;
+}
+#portfolio ul#Grid a.link span {
+	font-size: 11px;
+	line-height: 15px;
+}
+#portfolio ul.controls li {
+	padding: 5px 10px;
+}
+}
+@media(min-width:768px) and (max-width:991px) {
+#portfolio ul#Grid a.link {
+	font-size: 18px;
+}
+#portfolio ul#Grid a.link span {
+	font-size: 11px;
+	line-height: 15px;
+}
